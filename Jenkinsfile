@@ -1,11 +1,6 @@
 pipeline {
   agent any
-  stages {
-    stage('Checkout') {
-      steps {
-        git credentialsId: 'github_token', url: 'https://github.com/umeshtilak91/java-docker-pipeline.git'
-      }
-    }
+
 
     stage('Build Java') {
       steps {
