@@ -1,7 +1,7 @@
 pipeline {
   agent any
 
-
+  stages {
     stage('Build Java') {
       steps {
         sh 'chmod +x build.sh'
